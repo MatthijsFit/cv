@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Curriculum Vitae of Matthijs Fitski, PhD - Technical Physician">
+<title>Matthijs Fitski CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: one calm column; date rail on the left on wide screens, stacked above each entry on phones */
+:root {
+  --bg: #ffffff;
+  --ink: #1f2933;
+  --ink-soft: #3d4a57;
+  --muted: #6b7785;
+  --rule: #d5dce3;
+  --accent: #0f6e86;
+  --font: "Open Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #11181d;
+    --ink: #e4eaef;
+    --ink-soft: #bcc7d0;
+    --muted: #8a97a3;
+    --rule: #2a363f;
+    --accent: #5cc0d6;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #11181d;
+  --ink: #e4eaef;
+  --ink-soft: #bcc7d0;
+  --muted: #8a97a3;
+  --rule: #2a363f;
+  --accent: #5cc0d6;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  -webkit-text-size-adjust: 100%;
+}
+.page { max-width: 820px; margin: 0 auto; padding-block: 48px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+b, strong { font-weight: 600; }
+
+/* Header */
+header { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "intro photo" "profile photo"; column-gap: 28px; align-items: start; }
+.intro { grid-area: intro; }
+.eyebrow { color: var(--accent); font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; margin: 0; }
+h1 { font-weight: 300; font-size: clamp(32px, 7vw, 46px); line-height: 1.1; margin: 4px 0 0; letter-spacing: -.01em; text-wrap: balance; }
+.profile { grid-area: profile; margin: 14px 0 0; color: var(--ink-soft); max-width: 68ch; }
+.photo { grid-area: photo; width: 128px; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 3px; max-width: 100%; }
+
+/* Sections */
+section { margin-top: 40px; }
+h2 {
+  color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+  margin: 0 0 16px; padding-bottom: 6px; border-bottom: 1px solid var(--rule);
+}
+
+/* Date-rail entries */
+.entries { display: grid; gap: 22px; }
+.entry { display: grid; grid-template-columns: 150px 1fr; column-gap: 20px; }
+.when { color: var(--muted); font-size: 13px; padding-top: 2px; font-variant-numeric: tabular-nums; }
+.what h3 { font-size: 15px; font-weight: 400; margin: 0; line-height: 1.45; }
+.what h3 b { color: var(--ink); }
+.org { color: var(--ink-soft); }
+.what p { color: var(--ink-soft); font-size: 14px; margin: 6px 0 0; max-width: 68ch; }
+
+/* Label/value pairs */
+dl.facts { display: grid; grid-template-columns: 150px 1fr; column-gap: 20px; row-gap: 6px; margin: 0; }
+dl.facts dt { color: var(--muted); font-size: 13px; padding-top: 2px; }
+dl.facts dd { margin: 0; }
+
+/* Phones: stack the date above each entry */
+@media (max-width: 600px) {
+  .page { padding-block: 28px 48px; }
+  header { grid-template-areas: "intro photo" "profile profile"; column-gap: 16px; align-items: center; }
+  .photo { width: 80px; }
+  section { margin-top: 32px; }
+  .entry { grid-template-columns: 1fr; }
+  .when { padding-top: 0; font-size: 12.5px; }
+  dl.facts { grid-template-columns: 110px 1fr; column-gap: 12px; }
+  dl.facts dd { overflow-wrap: anywhere; }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+<header>
+  <div class="intro">
+    <p class="eyebrow">Curriculum Vitae</p>
+    <h1>Matthijs Fitski, PhD</h1>
+  </div>
+  <p class="profile">I am a Technical Physician driving innovation by collaborating with clinicians to achieve the greatest clinical impact for patients. I have a scientific background in (pediatric) surgery, working on technique development from bench to bedside.</p>
+  <img class="photo" src="Matthijs.jpg" alt="Portrait of Matthijs Fitski">
+</header>
+
+<section>
+  <h2>Personal data</h2>
+  <dl class="facts">
+    <dt>Address</dt><dd>Utrecht, Netherlands</dd>
+    <dt>Phone number</dt><dd><a href="tel:+31644130674">+31 6 4413 0674</a></dd>
+    <dt>Email</dt><dd><a href="mailto:mfitski@gmail.com">mfitski@gmail.com</a></dd>
+    <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/matthijs-fitski-61a176113" target="_blank" rel="noopener">LinkedIn profile</a></dd>
+    <dt>Publications</dt><dd><a href="https://www.ncbi.nlm.nih.gov/myncbi/matthijs.fitski.1/bibliography/public/" target="_blank" rel="noopener">NIH bibliography</a></dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Job experience</h2>
+  <div class="entries">
+    <div class="entry">
+      <div class="when">August 2024 – Present</div>
+      <div class="what">
+        <h3><b>Technical physician and post-doc</b>, <span class="org">Princess Máxima Center for Pediatric Oncology, department of Pediatric Surgery</span>, <span class="org">Utrecht</span></h3>
+        <p>Technical Physician at the department of Pediatric Surgery, responsible for 3D planning and 3D care and setting up a quality management system. As a post-doctoral researcher, I work on international research on 3D technology in pediatric surgical oncology and coordinate the image-guided surgery research of the Clinical Research Program Group Surgical Oncology, led by principal investigator Dr. Van der Steeg.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">October 2019 – July 2024</div>
+      <div class="what">
+        <h3><b>PhD candidate</b>, <span class="org">Princess Máxima Center for Pediatric Oncology, department of Pediatric Surgery</span>, <span class="org">Utrecht</span></h3>
+        <p>PhD research on 3D technology in pediatric oncologic surgery, from technique development to clinical implementation.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">April 2013 – December 2017</div>
+      <div class="what">
+        <h3><b>Study counselor</b>, <span class="org">Study Counseling Team</span>, <span class="org">Enschede</span></h3>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">April 2015 – January 2016</div>
+      <div class="what">
+        <h3><b>Personal Assistant Teacher</b>, <span class="org">Twente Academy</span>, <span class="org">Enschede</span></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Awards, supervision, committees and courses</h2>
+  <div class="entries">
+    <div class="entry">
+      <div class="when">2024</div>
+      <div class="what">
+        <h3><b>Prize for Best Dissertation 2024</b>, <span class="org">Dutch Association for Pediatric Surgery</span></h3>
+        <p>Awarded for the dissertation “Introducing new dimensions in pediatric oncologic surgery”.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2022</div>
+      <div class="what">
+        <h3><b>KWF Cancer Research grant</b>, <span class="org">KWF Dutch Cancer Society</span></h3>
+        <p>KWF approved my grant application <b>Holographic navigation for pediatric kidney tumor surgery, a feasibility study</b>, awarding our research group a grant of €175,006.98.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2019</div>
+      <div class="what">
+        <h3><b>Nomination prof. dr. G.P. Vooijs award</b>, <span class="org">Dutch Society for Technical Medicine</span></h3>
+        <p>A yearly award for the most clinically relevant master thesis of Technical Medicine.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2025 – Present</div>
+      <div class="what">
+        <h3><b>Supervisor of two PhD students</b>, <span class="org">Princess Máxima Center for Pediatric Oncology</span></h3>
+        <p>Supervising PhD research on 3D technology, spatial computing and patient education in pediatric surgical oncology.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2026 – Present</div>
+      <div class="what">
+        <h3><b>Member of the PDMáx commission</b>, <span class="org">Princess Máxima Center for Pediatric Oncology</span></h3>
+        <p>The PDMáx commission represents post-docs to develop relevant policies with research management and organizes events for the post-doc community.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2025</div>
+      <div class="what">
+        <h3><b>Surgical Data Science Summer School</b>, <span class="org">Institut Hospitalo-Universitaire de Strasbourg and the CAMMA Research Lab</span></h3>
+        <p>Five day course with key opinion leaders on Surgical Data Science and Artificial Intelligence in surgery.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2021</div>
+      <div class="what">
+        <h3><b>Basic Course in Regulations and Organization for Clinical Researchers</b>, <span class="org">UMCNL</span></h3>
+        <p>BROK Course, re-registration valid until 10-01-2027.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2021</div>
+      <div class="what">
+        <h3><b>Intellectual Property</b>, <span class="org">Paul Janssen Futurelab Leiden</span></h3>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">2017</div>
+      <div class="what">
+        <h3><b>Radiation Expertise level III</b>, <span class="org">Radboudumc Health Academy</span></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="entries">
+    <div class="entry">
+      <div class="when">October 2019 – July 2024</div>
+      <div class="what">
+        <h3><b>PhD</b>, <span class="org">Utrecht University</span>, <span class="org">Utrecht</span></h3>
+        <p>Dissertation <b>Introducing new dimensions in pediatric oncologic surgery</b>, defended on 03-07-2024. Research performed at the Princess Máxima Center for Pediatric Oncology, department of Pediatric Surgery.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">September 2016 – September 2019</div>
+      <div class="what">
+        <h3><b>Master Technical Medicine</b>, <span class="org">University of Twente</span>, <span class="org">Enschede</span></h3>
+        <p>Master track Medical Imaging and Interventions, finished with an average of 8,2 / 10.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">October 2018 – September 2019</div>
+      <div class="what">
+        <h3><b>Clinical specialization internship</b>, <span class="org">PMC Pediatric Surgery</span>, <span class="org">Utrecht</span></h3>
+        <p>Master thesis Evaluation of three dimensional visualization techniques for improving preoperative planning of Wilms tumour surgery, finished with a 9 and nomination for the prof. dr. G.P. Vooijs award.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">June 2018 – September 2018</div>
+      <div class="what">
+        <h3><b>4<sup>th</sup> clinical internship</b>, <span class="org">PMC Pediatric Surgery</span>, <span class="org">Utrecht</span></h3>
+        <p>Novel preoperative imaging strategies for Nephron Sparing Surgery of unilateral Wilms’ tumour</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">March 2018 – May 2018</div>
+      <div class="what">
+        <h3><b>3<sup>rd</sup> clinical internship</b>, <span class="org">AMC Radiotherapy</span>, <span class="org">Amsterdam</span></h3>
+        <p>Comparison of two two-step registration algorithms for the matching of cone-beam computed tomography and computed tomography scans in paediatric radiotherapy</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">December 2017 – February 2018</div>
+      <div class="what">
+        <h3><b>2<sup>nd</sup> clinical internship</b>, <span class="org">NKI AvL Radiology</span>, <span class="org">Amsterdam</span></h3>
+        <p>Evaluation of deep learning based automatic segmentation algorithms on abdominal oncological images</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">September 2017 – December 2017</div>
+      <div class="what">
+        <h3><b>1<sup>st</sup> clinical internship</b>, <span class="org">UMCU Orthopedic surgery</span>, <span class="org">Utrecht</span></h3>
+        <p>An accuracy comparison between nylon and stainless steel CT-based thoracic vertebra specific drilling guides</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">September 2012 – July 2016</div>
+      <div class="what">
+        <h3><b>Bachelor Technical Medicine</b>, <span class="org">University of Twente</span>, <span class="org">Enschede</span></h3>
+        <p>Bachelor thesis Effect of flexion and load-bearing on patellofemoral parameters at the department of Orthopedic Surgery of the UMC Utrecht.</p>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="when">September 2006 – June 2012</div>
+      <div class="what">
+        <h3><b>Secondary Scientific Education (VWO)</b>, <span class="org">RSG Broklede</span>, <span class="org">Breukelen</span></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <dl class="facts">
+    <dt>Programming</dt><dd>Python, Matlab, R</dd>
+    <dt>3D Modelling</dt><dd>3D Slicer segmentation, CADesign</dd>
+    <dt>Grant writing</dt><dd>KWF, KiKa, Rally foundation, Fight Kids Cancer</dd>
+    <dt>Presenting</dt><dd>Scientific presentations (invited and based on abstracts), consortium chairing, layman talks</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Languages</h2>
+  <dl class="facts">
+    <dt>Dutch</dt><dd>Native</dd>
+    <dt>English</dt><dd>Full professional proficiency</dd>
+    <dt>German</dt><dd>Limited working proficiency</dd>
+    <dt>French</dt><dd>Elementary proficiency</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Interests and activities</h2>
+  <div class="entries">
+    <div class="entry"><div class="when">Parenting</div><div class="what"><p>In 2026, I became the proud father of our daughter Mare Charlotte Fitski.</p></div></div>
+    <div class="entry"><div class="when">Hiking</div><div class="what"><p>In 2015, I completed the Grande Randonnée 20. This is a sixteen-day hiking trail from the northwest of Corsica to the southeast.</p></div></div>
+    <div class="entry"><div class="when">Cooking</div><div class="what"><p>I love the French, Italian and Indonesian kitchen.</p></div></div>
+    <div class="entry"><div class="when">Skiing</div><div class="what"><p>Since I was 6 years old, I have been skiing every year, primarily in Dolomiti Super Ski in northern Italy.</p></div></div>
+    <div class="entry"><div class="when">Travelling</div><div class="what"><p>Thailand, India, Nepal, Mexico, Japan, Peru, Canada, the US and much of Europe.</p></div></div>
+  </div>
+</section>
+</div>
+</body>
+</html>
